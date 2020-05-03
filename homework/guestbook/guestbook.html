@@ -1,0 +1,87 @@
+<html>
+    <head>
+	    <title>guestbook</title>
+		<style type = "text/css">
+		input {width:200px; font-family:宋体;font-weight:bold;}
+		.td1 {width:150px;}
+		.td2 {width:650px;}
+		.td3 {text-align:center;}
+		.lighter {font-weight:lighter;}
+		.ipt {width : 30px;}
+		.ipt1 {width:20px;}
+		.ipt2 {width:50px;background-color:orange;}
+		img {width :85px;}
+		table {background-color:#afb4db;}
+		table {font-family:宋体;font-weight:bold;}
+		th {background-color:#6950a1;}
+		body {
+			font-family: 'Times New Roman', Times, serif;
+		}
+		</style>
+	</head>
+	<body>
+		<a href = "../../index.html">HOME</a>
+	    <form action = "" method = "post">
+		<table width = "800px" align = "center" border = 1 cellpadding = "5" cellspacing = "0">
+		    <tr><th colspan = "2">留言簿</th></tr>
+			<tr>
+			<td class ="td1">你的姓名：</td>
+			<td><input type = "text" name = "name"><font color = "red">*</font></td>
+			</tr>
+			<tr>
+			<td class ="td1">你的邮箱：</td>
+			<td><input type = "text" name = "email"><font color = "red">*</font></td>
+			</tr>
+			<tr>
+			<td class ="td1">你的网站：</td>
+			<td><input type = "text" name = "网站" value = "http://"><font color = "red">*</font></td>
+			</tr>
+			<tr>
+			<td class ="td1">其他联系方式：</td>
+			<td><input type = "text" name = "联系方式"><font class = "lighter">(微信,NSN,电话等）</font></td>
+			</tr>
+			<td class ="td1">留言内容：<br><font class = "lighter">(200字以内)</font></td>
+			<td height = "100px" align = ""><textarea name = "suggestion" rows = "7" cols = "80"></textarea><font color = "red">*</font></td>
+			</tr>
+			<td class ="td1">请选择表情：</td>
+			<td>
+			<input name = "表情" type = "radio" class = "ipt">😀
+			<input name = "表情" type = "radio" class = "ipt">😃
+			<input name = "表情" type = "radio" class = "ipt">😔
+			<input name = "表情" type = "radio" class = "ipt">😳
+			<input name = "表情" type = "radio" class = "ipt">🤠
+			<input name = "表情" type = "radio" class = "ipt">🤧
+			<input name = "表情" type = "radio" class = "ipt">😷
+			<input name = "表情" type = "radio" class = "ipt">🤡
+			<input name = "表情" type = "radio" class = "ipt">👺
+			<input name = "表情" type = "radio" class = "ipt">👹
+			<input name = "表情" type = "radio" class = "ipt">🤖
+			<input name = "表情" type = "radio" class = "ipt">🤢
+			<input name = "表情" type = "radio" class = "ipt">👻
+			<input name = "表情" type = "radio" class = "ipt">🤭
+			<input name = "表情" type = "radio" class = "ipt">🤔
+			<input name = "表情" type = "radio" class = "ipt">🤬
+			<input name = "表情" type = "radio" class = "ipt">😡
+			<input name = "表情" type = "radio" class = "ipt">😈
+			<input name = "表情" type = "radio" class = "ipt">🤐
+			</td>
+			</tr>
+			<td class ="td1">请选择头像：</td>
+			<td><input type = "radio" name = "头像" class = "ipt1"><img src = "pic1.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic2.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic3.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic4.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic5.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic6.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic7.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic8.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic9.gif">
+			<input type = "radio" name = "头像" class = "ipt1"><img src = "pic10.gif">
+			</td>
+			</tr>
+			<tr>
+			<td colspan ="2" class = "td3" ><input class = "ipt2" type = "submit" value = "提交"><input class = "ipt2" type = "reset" value = "重置"></td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -11,7 +11,7 @@ header {
     background-image: url("../image/header.jpg");
     background-size:100%;
     background-position: top;
-    height:200px;
+    height:220px;
 }
 ul {
     margin:0;
@@ -22,17 +22,21 @@ li {
     display:inline-block;
     margin-right:20px;
 }
-.logo{
-    background-color: brown;
-    background-image: url("../image/logo.jpg");
-    background-size: 100%;
-    background-repeat:no-repeat;
+@media screen and (max-width:715px) {
+    header .moblie {
+        display:inline-block;
+    }
+    header .desktop {
+        display:;
+    }
+}
+.logo img{
+    background-color:black;
     position: relative;
     display: inline-block;
-    text-indent: -9999px;
-    top:-20px;
-    height:60px;
-    width:50px;
+    top:20px;
+    height:55px;
+    width:40px;
 }
 a {
     text-decoration: none;
@@ -46,10 +50,11 @@ h1 {
     background-color: white;
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
 }
 section img{
     width:300px;
-    border-radius: 20px;
     height:200px;
     box-shadow: gray  0 0 10px;
 }
@@ -63,18 +68,33 @@ div h4 {
     background-color: black;
     color:gray;
     height:30px;
+    text-indent:2em;
 }
-figure figcaption {
-    text-align: center;
-}
-.text {
-    background-color: white;
-    width: 800px;
-    margin:0 auto;
-    line-height: 24px;
-}
+
+
 footer {
     background-color: black;
     text-align: center;
     color:gray;
+}
+ 
+.section1 li {
+    position: relative;
+}
+.section1 div {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(148, 142, 142);
+    color:white;
+    top:150px;
+    opacity: 0;
+    padding-top: 10px;
+}
+.section1 a:hover div {
+    opacity: 1;
+}
+.section2 {
+    width: 800px;
+    margin: 0 auto;
 }
