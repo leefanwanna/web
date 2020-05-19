@@ -1,0 +1,240 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif,微软雅黑;
+    margin:0;
+    padding:0;
+}
+header {
+    background-color: black;
+    font-size: x-large;
+    padding:20px;
+    background-image: url("../image/begin.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height:450px;
+}
+
+
+ ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+li {
+    display:inline-block;
+    margin-right:20px;
+    height:40px;
+}
+
+<!--导航栏动态，我不会
+
+
+
+nav ul {
+    position: relative;
+}
+
+.n1 {
+    width:49px;
+    
+}
+
+.n2 {
+    width: 98px;
+}
+
+.n3 {
+    width: 98px;
+}
+
+.n4 {
+    width:73px;
+}
+
+
+nav div {
+    position: absolute;
+    height: 30px;
+    background-color: paleturquoise;
+    opacity:0;
+}
+
+nav a:hover div {
+    opacity: 0;
+}
+
+
+-->
+
+
+
+
+.logo img{
+    background-color:black;
+    position: relative;
+    display: inline-block;
+    top:20px;
+    height:85px;
+    width:60px;
+}
+
+.logo a:hover {
+    box-shadow: rgb(10, 218, 233) 0 20px 20px;
+}
+
+
+nav {
+    top:100px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+nav a:hover {
+    color:rgb(8, 175, 241);
+    border-radius: 5px;
+    animation-name: nav;
+    animation-duration: 2s;
+    box-shadow: rgb(128, 248, 248) 0 10px 20px;
+}
+
+
+
+h1 {
+    text-indent: 20px;
+}
+
+p {
+    text-indent:20px;
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    color:gray;
+}
+ 
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+section div {
+    display: flex;
+    position: relative;
+    height: 550px;
+    width: 100%;
+    background-color: turquoise;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section div h1 {
+    font-family: 楷体;
+    font-size: 30px;
+    display: inline-block;
+    height: 32px;
+    margin-top:10px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.child1 {
+    background-image: url(../image/吉卜力/红猪.jpg);
+    
+}
+
+.child2 {
+    background-image: url(../image/吉卜力/借东西.jpg);
+}
+
+.child3 {
+    background-image: url(../image/吉卜力/宅急便.jpg);
+}
+
+.child4 {
+    background-image: url(../image/吉卜力/龙猫2.jpg);
+}
+
+.child5 {
+    background-image: url(../image/吉卜力/哈尔.jpg);
+}
+.child6 {
+    background-image: url(../image/吉卜力/千.jpg);
+}
+
+section div h1:hover {
+    text-indent: 0;
+    border-radius: 5px;
+    box-shadow: rgb(171, 248, 152) 0 10px 70px;
+}
+
+
+.fall:hover {
+    animation-name: fall;
+    animation-duration: 5s;
+}
+
+
+
+.aboutMeDiv {
+    text-align: center;
+    background-image: url(../image/bg14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.aboutMeDiv h1 {
+    display: inline;
+}
+
+
+
+@keyframes sectionMove {
+    55% {
+        transform: translateY(-40px);
+    }
+}
+
+
+@keyframes beginMove {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes bginDivMove {
+    50% {
+        transform: scale(2);
+    }
+}
+
+
+@keyframes fall {
+    100% {
+        transform: translateY(-800px);
+    }
+}

@@ -166,7 +166,7 @@ footer {
 }
 .section1 a:hover div {
     opacity: 0.9;
-    box-shadow: rgb(10, 232, 248)  0 10px 20px;
+    box-shadow: rgb(2, 227, 243)  0 20px 20px;
     border: paleturquoise;
     animation-name: sectionMove;
     animation-duration: 3.5s;
@@ -260,10 +260,9 @@ footer {
     animation-duration: 2s;
 }
 
-
 .move:hover {
     animation-name: beginMove;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 
 
@@ -275,7 +274,7 @@ footer {
 
 @keyframes beginMove {
     from {
-        transform: translateX(-300px);
+        transform: translateX(-230px);
     }
     to {
         transform: translateX(0px);
