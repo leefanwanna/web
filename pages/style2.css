@@ -134,14 +134,15 @@ section div {
     position: relative;
     height: 550px;
     width: 100%;
-    background-color: turquoise;
+    background-color: rgb(8, 175, 241);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
+
 
 section div h1 {
     font-family: 楷体;
@@ -151,30 +152,91 @@ section div h1 {
     margin-top:10px;
     margin-bottom: 0px;
     color: white;
+    z-index: 2;
 }
 
 .child1 {
     background-image: url(../image/吉卜力/红猪.jpg);
-    
+}
+
+.child1:hover::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+    filter: brightness(0.6);
 }
 
 .child2 {
     background-image: url(../image/吉卜力/借东西.jpg);
 }
 
+.child2:hover::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+    filter: brightness(0.6);
+}
+
 .child3 {
     background-image: url(../image/吉卜力/宅急便.jpg);
+}
+
+.child3:hover::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+    filter: brightness(0.6);
 }
 
 .child4 {
     background-image: url(../image/吉卜力/龙猫2.jpg);
 }
 
+.child4:hover::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+    filter: brightness(0.6);
+}
+
 .child5 {
     background-image: url(../image/吉卜力/哈尔.jpg);
 }
+
+.child5:hover::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+    filter: brightness(0.6);
+}
+
 .child6 {
     background-image: url(../image/吉卜力/千.jpg);
+}
+
+.child6:hover::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+    filter: brightness(0.6);
 }
 
 section div h1:hover {
