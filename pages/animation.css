@@ -11,22 +11,19 @@
     animation-iteration-count: infinite;
 }
 
+.monster:hover {
+    background-color: lightcoral;
+}
+
+
 .monster:hover .mouth::before {
     opacity: 1;
 }
 
-.mouth::before {
-    content: "hey!请点击我";
-    text-align: center;
-    opacity: 0;
-    height: 20px;
-    width: 120px;
-    position: absolute;
-    top:-60px;
-    left: 32px;
-    background-color: whitesmoke;
-    border-radius: 50%;
-}
+
+<!-- 阴影-->
+
+
 
 .monster:hover .mouth::before {
     opacity: 1;

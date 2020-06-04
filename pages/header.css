@@ -32,13 +32,13 @@ nav {
     margin-top: 60px;
 }
 
- ul {
+header ul {
     margin:0;
     padding:0;
     list-style-type:none;
 }
 
-li {
+header li {
     display:inline-block;
     margin-right:20px;
     position: relative;
@@ -148,3 +148,12 @@ nav a {
     list-style-type: none;
 }
 
+#tp {
+    z-index: -1;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color:gray;
+}

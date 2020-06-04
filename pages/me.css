@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.section1 h1 {
+    font-size:4em;
+    min-width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    color: gray;
+}
+
+.section1 {
+    display: flex;
+    background-color: black;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    position: relative;
+    font-size: large;
+}
+
+.section1 h1:after {
+    content: "Talk is cheap,show me your code!";
+    font-size: inherit;
+    min-width: inherit;
+    color: transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    background:-webkit-linear-gradient(left,white,#c23616,orange,yellow,#4cd137,#2e86de,blue);
+    -webkit-background-clip: text;
+    clip-path: circle(100px at 0% 50%);
+    -webkit-clip-path: circle(120px at 8% 50%);
+    animation: light 8s infinite;
+}
+
+@keyframes light {
+    50% {
+        clip-path: circle(100px at 0% 60%);
+        -webkit-clip-path: circle(100px at 92% 50%);
+    }
+}
+
+.section2 ul {
+    list-style-type: none;
+}
+
+.section2 {
+    height: 580px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.section2 ul {
+    position: absolute;
+    top:80px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 400px;
+    width: 810px;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px;
+}
+
+
+.section2 li {
+    width: 160px;
+    float: left;
+    border: 1px solid #fff;
+    transition:all 1s ;
+}
+
+.section2 img {
+    height:400px;
+}
+
+.section2 ul:hover li{
+    width: 50px;
+}
+
+.section2 ul li:hover {
+    width: 600px;
+    box-shadow: gray 0px 10px 5px;
+}

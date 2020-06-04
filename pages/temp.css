@@ -32,55 +32,53 @@ h1 {
     height: 550px;
     margin: 0px;
     padding: 0px;
+    position: relative;
 }
 
 .section1 ul img {
     height:400px;
-    width: 500px;
-}
-.section1 ul {
-    width: 3500px;
-    list-style-type: none;
-    animation: slide 15s infinite;
-    animation-timing-function: steps(7,end);
-    position: absolute;  
-    top:-5px;
-    left: -8%;
 }
 
-@keyframes slide {
-    to {
-        transform: translateX(-3500px);
-    }
+
+.section1 ul {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 890px;
+    overflow: hidden;
+    padding: 0px;
 }
 
 .section1 ul li {
     float: left;
+    width: 120px;
+    border: 2px solid lightblue;
+    background-color: lightcoral;
+    transition: all 1s linear;
+    box-shadow: gray 0 10px 10px;
+}
+
+.section1 ul:hover li {
+    width: 60px;
+}
+
+.section1 ul li:hover{
     width: 500px;
+    height: 400px;
     position: relative;
 }
 
-.box1 {
-    width: 500px;
-    height: 450px;
-    overflow: hidden;
-    margin: auto;
-    position: relative;
-}
-.section1 ul:hover
-{
-    animation-play-state: paused;
-}
 
 
 .section1 img{
-    width:300px;
-    height:200px;
+    height:480px;
 }
+
 p {
     text-indent:20px;
 }
-div h4 {
+h4 {
     margin:0;
     padding: 0px;
     line-height: 30px;
@@ -88,6 +86,56 @@ div h4 {
     color:gray;
     height:30px;
     text-indent:2em;
+    position: relative;
+}
+
+
+
+h4::before {
+    content: "";
+    position: absolute;
+    background-color: lightcoral;
+    width: 30px;
+    height: 30px;
+    top:-30px;
+    left: 100px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fun1 linear 2.5s infinite;
+}
+
+h4::after {
+    content: "";
+    position: absolute;
+    background-color: lightblue;
+    width: 30px;
+    height: 30px;
+    top:-30px;
+    left: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fun2 linear 2.5s infinite;
+}
+
+h4:hover::before {
+    opacity: 1;
+}
+
+
+h4:hover::after {
+    opacity: 1;
+}
+
+@keyframes fun1 {
+  50% {
+      transform: translateX(-100px);
+  }
+}
+
+@keyframes fun2 {
+    50% {
+        transform: translateX(-120px);
+    }
 }
 
 .section1 ul {
@@ -211,6 +259,7 @@ div h4 {
     background-attachment: fixed;
     min-height:520px;
     font-size: large;
+    position: relative;
 }
 
 .section2 div {
@@ -357,14 +406,7 @@ div h4 {
 
 
 
-@keyframes beginMove {
-    from {
-        transform: translateX(-230px);
-    }
-    to {
-        transform: translateX(0px);
-    }
-}
+
 
 
 @keyframes bginDivMove {
